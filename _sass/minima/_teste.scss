@@ -1,0 +1,121 @@
+$background-color: #EEE;
+$primary-color: #57A0D7;
+$secondary-color: #7B8794;
+$accent-color: #C09E07;
+$neutral-one: white;
+$neutral-two: #ccc;
+
+@function ratio($width, $height) {
+    $ze: $height / $width;
+    @return percentage($ze);
+}
+
+.mod {
+    .image {
+        padding-bottom: ratio(16,9);
+        position: relative;
+        background: $background-color;
+        margin-bottom: 12px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            &.resrc {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+}
+
+    .title {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+        margin-top: 5px;
+        margin-bottom: 8px;
+
+        .obs-icon-photogallery {
+            width: 23px;
+            height: 23px;
+            vertical-align: -3px;
+            margin-right: 4px;
+        }
+        
+        .premium-suffix {
+            color: $accent-color;
+        }
+}
+
+    .meta {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 6px;
+
+        .rating .star {
+            color: $neutral-two;
+            font-size: 18px;
+            margin-left: -4px;
+        }
+        
+        .rating.stars-1 .star:nth-child(-n+1) {
+            color: $primary-color;
+        }
+        
+        .rating.stars-2 .star:nth-child(-n+2) {
+            color: $primary-color;
+        }
+        
+        .rating.stars-3 .star:nth-child(-n+3) {
+            color: $primary-color;
+        }
+        
+        .rating.stars-4 .star:nth-child(-n+4) {
+            color: $primary-color;
+        }
+        
+        .rating.stars-5 .star:nth-child(-n+5) {
+            color: $primary-color;
+        }
+        
+        .flag {
+            padding: 4px 4px 3px 5px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 6px;
+        }
+        
+        .flag.updating {
+            background: $secondary-color;
+            color: $neutral-one;
+        }
+        
+        .flag.updated {
+            background: $background-color;
+        }
+        
+        .button>span {
+            display: block;
+        }
+        
+        .obs-icon-share {
+            width: 11px;
+            height: 11px;
+        }
+        
+        .obs-icon-share+p {
+            display: inline;
+        }
+    }
+
+    .lead {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

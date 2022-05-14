@@ -1,0 +1,16 @@
+---
+layout: page
+title: Projetos
+---
+
+<h1>This is the project description.</h1>
+
+{% for projetos in site.projetos %}
+
+<div class="projetos">
+    <h2>{{projetos.title}}</h2>
+    {{projetos.content}}
+</div>
+
+{% endfor %}
+
