@@ -8,8 +8,10 @@ title: My Projects
 {% for projetos in site.projetos %}
 
 <div class="projetos">
-    <h2>{{projetos.title}}</h2>
-    {{projetos.content}}
+    <a href="{{ projetos.url | relative_url }}">
+        <h2>{{projetos.title}}</h2>
+    </a>
+    <p>{{projetos.description}}</p>
 </div>
 
 {% endfor %}
