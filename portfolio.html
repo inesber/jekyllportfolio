@@ -9,10 +9,29 @@ title: My Projects
 
 <div class="projetos">
     <a href="{{ projetos.url | relative_url }}">
-        <h2>{{projetos.title}}</h2>
+        <h2>{{ projetos.title }}</h2>
     </a>
-    <p>{{projetos.description}}</p>
+    <p>{{ projetos.description }}</p>
 </div>
 
 {% endfor %}
 
+{% for projetos in site.projetos %}
+
+<div class="wrapper projetos">
+    <!--  <div id="project-grid" class="grid project-grid grid-4-col small-gutter"> -->
+    <div id="project-grid">
+        <div class="col project project--hover-2 web-design mockups">
+            <div class="project__img-holder">
+                <img src="{{ projetos.image  | relative_url }}" alt="" class="project__img">
+                <div class="project__overlay">
+                </div>
+                <div class="project__description">
+                    <h3 class="project__title"><a href="portfolio-single.html">{{ projetos.title }}</a></h3>
+                    <span class="project__category"><a href="portfolio-single.html">{{ projetos.description }}</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- end project -->
+
+        {% endfor %}
