@@ -6,13 +6,6 @@ p {
 
 //specific portfolio
 // Colors
-$main-color: #f36b21;
-$text-color: #7a7a7a;
-$heading-color: #121212;
-$nav-color: #121212;
-$bg-light: #f7f9fa;
-$bg-dark: #171919;
-$border-color: #e6ebed;
 
 $all: all 0.3s ease-in-out;
 
@@ -92,7 +85,7 @@ $all: all 0.3s ease-in-out;
         font-size: 16px;
 
         &:hover a {
-            color: $main-color;
+            color: $brand-color;
         }
     }
 
@@ -105,7 +98,7 @@ $all: all 0.3s ease-in-out;
         }
 
         &:hover a {
-            color: $main-color;
+            color: $brand-color;
         }
     }
 }
