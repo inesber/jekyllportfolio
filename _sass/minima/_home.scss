@@ -9,18 +9,9 @@ h2 {
     font-family: $title-font-family;
 }
 
-h1 {
-    font-size: 96px;
-    line-height: 1.5;
-}
-
-h2 {
-    font-size: 64px;
-}
-
 p {
     font-weight: normal;
-    font-size: 16px;
+    font-size: $small-font-size;
     line-height: 30px;
 }
 
@@ -65,10 +56,23 @@ p {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-item-home {
     padding: 20px;
     font-size: 30px;
-    text-align: center;
+    width: 500px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skill-image {
+    border-radius: 16px;
+    max-width: 500px;
 }
