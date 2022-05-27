@@ -6,6 +6,7 @@ button {
     color: $background-color;
     border: none;
     margin-top: $spacing-unit/2;
+    transition: width 0.5s;
 
     a {
         color: $background-color;
@@ -13,5 +14,7 @@ button {
 }
 
 button:hover {
-    background: #4770a5
+    background: $background-color;
+    width: 300px;
+    border: 1px solid $brand-color;
 }
