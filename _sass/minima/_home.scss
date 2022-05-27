@@ -56,3 +56,18 @@ p {
     border-radius: 16px;
     max-width: 500px;
 }
+
+@include media-query($on-palm) {
+    .area-image {
+        display: none;
+    }
+
+    .area {
+        flex-direction: column;
+    }
+
+    .grid-item-home {
+        padding: $spacing-unit 0;
+        width: auto;
+    }
+}

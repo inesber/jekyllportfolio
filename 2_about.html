@@ -18,3 +18,7 @@ permalink: /aboutme:output_ext
     <p class="item5 about-text">Prototyping</p>
     <p class="item6 about-text">Writing</p>
 </div>
+
+{% for pessoa in site.data.skills %}
+    {{ capacity.skill }}
+{% endfor %}

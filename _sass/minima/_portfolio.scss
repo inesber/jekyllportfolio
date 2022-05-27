@@ -11,20 +11,21 @@ $all: all 0.3s ease-in-out;
 
 .projetos {
     display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 /* Featured Works (Slider)*/
 
 .project-grid {
-    width: 25%;
+    margin: $spacing-unit 0;
 }
+
 
 .project {
     overflow: hidden;
     display: block;
     position: relative;
+    width: 100vh;
 
     .project-img {
         height: 60vh;
@@ -131,5 +132,16 @@ $all: all 0.3s ease-in-out;
 
     &:hover .project__img {
         transform: translateY(-30px);
+    }
+}
+
+@media (max-width: 900px) {
+    .projetos {
+        display: inline-flex;  
+        flex-direction: column;
+    }
+
+    .project-grid {
+        width: 100%;
     }
 }
