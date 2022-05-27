@@ -1,15 +1,51 @@
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 50px 0 100px 0;
-}
-
-.skill {
-    padding: $spacing-unit;
-    width: 25%;
-}
-
 .contact-intro {
     text-align: center;
+}
+
+form {
+    margin: 100px auto;
+}
+
+.feedback-input {
+    font-family: $base-font-family;
+    font-weight: 500;
+    font-size: $base-font-size;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid $brand-color;
+    transition: all 0.5s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid $brand-color;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: $base-font-family;
+    width: 200px;
+    background: $brand-color;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    color: $background-color;
+    font-size: $base-font-size;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+}
+
+[type="submit"]:hover {
+    background: #4770a5;
 }

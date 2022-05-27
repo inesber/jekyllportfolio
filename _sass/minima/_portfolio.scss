@@ -28,6 +28,7 @@ $all: all 0.3s ease-in-out;
 
     .project-img {
         height: 60vh;
+        object-fit: cover;
     }
 
     &__img {

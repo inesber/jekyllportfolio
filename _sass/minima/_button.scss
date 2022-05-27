@@ -5,9 +5,13 @@ button {
     background-color: $brand-color;
     color: $background-color;
     border: none;
-    margin-top: $spacing-unit;
+    margin-top: $spacing-unit/2;
+
+    a {
+        color: $background-color;
+    }
 }
 
-.home-button {
-    color: $background-color;
+button:hover {
+    background: #4770a5
 }

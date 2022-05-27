@@ -9,12 +9,13 @@
 
 
 section {
-    height: 75vh;
-    width: 80vw;
-    background-size: contain;
+    height: 90vh;
+    width: 100%;
     background-attachment: fixed;
     margin: auto;
+    background-size: cover;
 }
+
 
 .image-fbaul_1 {
     background-image: url(fbaul1.png);
@@ -187,4 +188,13 @@ section {
 
 .image-ff_10 {
     background-image: url(ff10.png);
+}
+
+
+@media(max-width:320px) {
+section {
+    background-attachment: scroll;
+    background-size: contain;
+    height: 75vh;
+}
 }
