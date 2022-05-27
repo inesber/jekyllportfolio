@@ -82,21 +82,16 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
 
   &:hover {
-    color: $text-color;
+    color: $brand-color;
     text-decoration: underline;
+    font-weight: 900;
+    text-decoration: none;
   }
 
   .social-media-list &:hover {
     text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -135,7 +130,7 @@ a {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: #{$brand-color};
     padding-right: 5px;
     vertical-align: text-top;
 }

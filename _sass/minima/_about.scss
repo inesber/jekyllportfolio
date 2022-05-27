@@ -5,6 +5,7 @@
 
 .item2 {
     grid-area: menu;
+    height: 500px;
 }
 
 .item3 {
@@ -30,10 +31,18 @@
         'menu menu main main main'
         'menu menu skill1 skill2 skill3';
     gap: 50px;
-    padding: 10px;
-    height: 70vh;
+    margin: $spacing-unit 0;
 }
 
 .about-text {
     font-size: $small-font-size;
+}
+
+.item4, .item5, .item6 {
+    background-color: $brand-color;
+    color: $background-color;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }

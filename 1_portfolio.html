@@ -1,0 +1,22 @@
+---
+layout: page
+title: Explore My Projects
+---
+
+<div class="projetos">
+{% for projetos in site.projetos %}
+
+    <div class="project-grid">
+        <div class="project project--hover-2">
+            <div class="project__img-holder">
+                <img src="{{ projetos.image  | relative_url }}" alt="" class="project-img">
+                <div class="project__overlay"></div>
+                <div class="project__description">
+                    <h3 class="project__title"><a href="{{ projetos.url  | relative_url }}">{{ projetos.title }}</a></h3>
+                    <span class="project__category">{{ projetos.description }}</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
