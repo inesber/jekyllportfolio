@@ -14,11 +14,12 @@ permalink: /aboutme:output_ext
     like to do in my free time. 
     <br> I'm not working on those, I also like to paint - primarily gouache and sketching - and reading. When I'm not
     working on those, I also like to paint - primarily gouache and sketching - and reading.</p>
-    <p class="item4 about-text">Product Design</p>
-    <p class="item5 about-text">Prototyping</p>
-    <p class="item6 about-text">Writing</p>
+    <div class="item4">
+        <h3 class="item4">These are my main skills:</h3>
+    {% for capacity in site.data.skills %}
+    <ul class="item4 about-text">
+        <li> {{ capacity.skill }}</li>
+    </ul>
+    {% endfor %}
+    </div>
 </div>
-
-{% for pessoa in site.data.skills %}
-    {{ capacity.skill }}
-{% endfor %}

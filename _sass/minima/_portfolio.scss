@@ -20,12 +20,14 @@ $all: all 0.3s ease-in-out;
     margin: $spacing-unit 0;
 }
 
+.project-container {
+    text-align: center;
+}
 
 .project {
     overflow: hidden;
     display: block;
     position: relative;
-    width: 100vh;
 
     .project-img {
         height: 60vh;

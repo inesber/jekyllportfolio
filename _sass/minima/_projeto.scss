@@ -11,12 +11,20 @@
 section {
     height: 100vh;
     width: 100%;
-    margin: auto;
+    margin: 20px auto;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment:fixed;
     background-position: center;
+    border-radius: 8px;
 }
 
+@media(max-width:900px) {
+    section {
+        background-attachment: scroll;
+        background-size: cover;
+        height: 60vh;
+    }
+}
 
 .image-fbaul_1 {
     background-image: url(fbaul1.png);
@@ -38,76 +46,25 @@ section {
     background-image: url(fbaul5.png);
 }
 
-.image-fbaul_6 {
-    background-image: url(fbaul6.png);
-}
-
-.image-fbaul_7 {
-    background-image: url(fbaul7.png);
-}
-
-.image-fbaul_8 {
-    background-image: url(fbaul8.png);
-}
-
-.image-fbaul_9 {
-    background-image: url(fbaul9.png);
-}
-
-.image-fbaul_10 {
-    background-image: url(fbaul10.png);
-}
-
-.image-fbaul_11 {
-    background-image: url(fbaul11.png);
-}
 
 .image-net_1 {
-    background-image: url(netflix1.png);
+    background-image: url(net1.png);
 }
 
 .image-net_2 {
-    background-image: url(netflix2.png);
+    background-image: url(net2.png);
 }
 
 .image-net_3 {
-    background-image: url(netflix3.png);
+    background-image: url(net3.png);
 }
 
 .image-net_4 {
-    background-image: url(netflix4.png);
+    background-image: url(net4.png);
 }
 
 .image-net_5 {
-    background-image: url(netflix5.png);
-}
-
-.image-net_6 {
-    background-image: url(netflix6.png);
-}
-
-.image-net_7 {
-    background-image: url(netflix7.png);
-}
-
-.image-net_8 {
-    background-image: url(netflix8.png);
-}
-
-.image-net_9 {
-    background-image: url(netflix9.png);
-}
-
-.image-net_10 {
-    background-image: url(netflix10.png);
-}
-
-.image-net_11 {
-    background-image: url(netflix11.png);
-}
-
-.image-net_11 {
-    background-image: url(netflix11.png);
+    background-image: url(net5.png);
 }
 
 .image-ap_1 {
@@ -130,27 +87,6 @@ section {
     background-image: url(ap5.png);
 }
 
-.image-ap_6 {
-    background-image: url(ap12.png);
-}
-
-.image-ap_7 {
-    background-image: url(ap15.png);
-}
-
-.image-ap_8 {
-    background-image: url(ap16.png);
-}
-
-.image-ap_9 {
-    background-image: url(ap18.png);
-}
-
-.image-ap_10 {
-    background-image: url(ap20.png);
-}
-
-
 .image-ff_1 {
     background-image: url(ff1.png);
 }
@@ -169,33 +105,4 @@ section {
 
 .image-ff_5 {
     background-image: url(ff5.png);
-}
-
-.image-ff_6 {
-    background-image: url(ff6.png);
-}
-
-.image-ff_7 {
-    background-image: url(ff7.png);
-}
-
-.image-ff_8 {
-    background-image: url(ff8.png);
-}
-
-.image-ff_9 {
-    background-image: url(ff9.png);
-}
-
-.image-ff_10 {
-    background-image: url(ff10.png);
-}
-
-
-@media(max-width:320px) {
-section {
-    background-attachment: scroll;
-    background-size: contain;
-    height: 75vh;
-}
 }

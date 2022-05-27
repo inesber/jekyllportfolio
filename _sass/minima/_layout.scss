@@ -112,15 +112,9 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 0 0 0;
 }
 
-.footer-wrapper {
-  position: absolute;
-  bottom: 0;
-}
-
-.contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;

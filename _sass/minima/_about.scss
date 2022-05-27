@@ -5,7 +5,6 @@
 
 .item2 {
     grid-area: menu;
-    height: 500px;
 }
 
 .item3 {
@@ -13,26 +12,19 @@
 }
 
 .item4 {
-    grid-area: skill1;
-
-}
-
-.item5 {
-    grid-area: skill2;
-}
-
-.item6 {
-    grid-area: skill3;
+    grid-area: skills;
 }
 
 .grid-container-about {
     display: grid;
     grid-template-areas:
-        'menu menu  header header header'
-        'menu menu  main main main'
-        'menu menu  skill1 skill2 skill3';
+        'menu header header'
+        'menu main skills'
+        'menu main skills';
     gap: 50px;
-    margin: $spacing-unit 0;
+    margin: $spacing-unit*2 0;
+    grid-template-columns: [first] auto [line2] auto [line3] auto;
+
 
     img {
         object-fit: cover;
@@ -41,9 +33,25 @@
 
 .about-text {
     font-size: $small-font-size;
-    text-align: center;
 }
 
-.item1,.item2,.item3,.item4, .item5, .item6 {
-    place-self: center;
+.item1,.item2,.item3,.item4 {
+    justify-items: start;
+}
+
+@media (max-width:700px) {
+    .grid-container-about {
+        display: grid;
+        grid-template-areas:
+            'header header header'
+            'main main main'
+            'skills skills skills';
+        margin: $spacing-unit*2 0;
+        text-align: center;
+
+
+        img {
+            display: none;
+        }
+    }
 }
