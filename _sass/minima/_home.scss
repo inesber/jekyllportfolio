@@ -10,7 +10,6 @@ h2 {
 }
 
 p {
-    font-weight: normal;
     font-size: $small-font-size;
     line-height: 30px;
 }
@@ -30,6 +29,7 @@ p {
 .hero h2 {
     line-height: 1.5;
     font-size: 24px;
+    padding-top: $spacing-unit / 3;
 }
 
 .grid-container {

@@ -17,4 +17,8 @@ button:hover {
     background: $background-color;
     width: 300px;
     border: 1px solid $brand-color;
+
+    a {
+        color: $brand-color;
+    }
 }
